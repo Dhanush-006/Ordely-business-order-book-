@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvOrderDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Shipping Address -->
+    <TextView
+        android:id="@+id/tvShippingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipping Address: "
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Payment Mode -->
+    <TextView
+        android:id="@+id/tvPaymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode: "
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- Transaction ID -->
+    <TextView
+        android:id="@+id/tvTransactionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction ID: "
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- Customer Notes -->
+    <TextView
+        android:id="@+id/tvCustomerNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Notes: "
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone" />
+
+    <!-- RecyclerView for products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrderItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: ₹ 0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:padding="12dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

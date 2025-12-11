@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Orderly_book</string>
+    <string-array name="order_status_options">
+        <item>pending</item>
+        <item>accepted</item>
+        <item>rejected</item>
+        <item>delivered</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Order Info -->
+        <TextView
+            android:id="@+id/tvOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order #"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Date:"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination:"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTrackingStage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking:"
+            android:paddingBottom="8dp"/>
+
+        <!-- Order-level Rejection Info -->
+        <TextView
+            android:id="@+id/tvRejectionReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejection Reason: N/A"
+            android:textColor="#FF0000"
+            android:paddingBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvRejectionNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejection Note: N/A"
+            android:textColor="#FF0000"
+            android:paddingBottom="12dp"
+            android:visibility="gone"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="#CCCCCC"/>
+
+        <!-- Items Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items in your order"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+    </LinearLayout>
+</ScrollView>
